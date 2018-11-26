@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "name": "spring.calculator",
+      "type": "com.edgewalk.calculator.CalculatorServiceProperties",
+      "sourceType": "com.edgewalk.calculator.CalculatorServiceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.calculator.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否开启",
+      "sourceType": "com.edgewalk.calculator.CalculatorServiceProperties",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}
