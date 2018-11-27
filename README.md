@@ -11,7 +11,7 @@
 ```
 ### 2 编码使用
 ```java
-import com.edgewalk.calculator.Calculator;
+import Calculator;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

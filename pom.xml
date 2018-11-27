@@ -1,44 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.edgewalk</groupId>
+    <artifactId>calculator-spring-boot-starter</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
 
-  <groupId>com.edgewalk</groupId>
-  <artifactId>calculator-spring-boot-starter</artifactId>
-  <version>1.0.0</version>
+    <name>calculator-spring-boot-starter</name>
+    <description>基于SpringBoot2.1.0.RELEASE的简单计算器实现</description>
 
-  <name>calculator-spring-boot-starter</name>
-  <description>基于SpringBoot2.1.0.RELEASE的简单计算器实现</description>
+    <!--使用oss组件-->
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
 
-  <dependencies>
-    <dependency><!-- 以下两个依赖是自动配置的依赖 -->
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-autoconfigure</artifactId>
-      <version>2.1.0.RELEASE</version>
-    </dependency>
+    <!--许可-->
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-configuration-processor</artifactId>
-      <version>2.1.0.RELEASE</version>
-      <optional>true</optional>
-    </dependency>
-  </dependencies>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
-        <configuration>
-          <encoding>UTF-8</encoding>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+    <!--配置项目的地址相关信息-->
+    <scm>
+        <url>https://github.com/edgewalk/calculator-spring-boot-starter</url>
+        <connection>git@github.com:edgewalk/calculator-spring-boot-starter.git</connection>
+        <developerConnection>https://github.com/edgewalk/calculator-spring-boot-starter</developerConnection>
+    </scm>
 
+    <!--开发者信息-->
+    <developers>
+        <developer>
+            <name>jianghui</name>
+            <email>itjianghui@163.com</email>
+        </developer>
+    </developers>
 
+    <dependencies>
+        <dependency>
+            <!--autoAonfiguration类需要依赖的jar包-->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.1.0.RELEASE</version>
+        </dependency>
+
+        <!--编译时生成 spring-configuration-metadata.json,此文件主要给IDE使用,配置文件提示-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>2.1.0.RELEASE</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

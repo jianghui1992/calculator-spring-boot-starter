@@ -1,4 +1,4 @@
-package com.edgewalk.calculator;
+package com.github.edgewalk.calculator;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

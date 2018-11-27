@@ -1,4 +1,4 @@
-package com.edgewalk.calculator;
+package com.github.edgewalk.calculator;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
