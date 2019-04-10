@@ -4,9 +4,9 @@
 ### 1 依赖引入
 ```xml
 <dependency>
-	<groupId>com.edgewalk</groupId>
-	<artifactId>calculator-spring-boot-starter</artifactId>
-	<version>1.0.0</version>
+  <groupId>com.github.edgewalk</groupId>
+  <artifactId>calculator-spring-boot-starter</artifactId>
+  <version>1.0.0</version>
 </dependency>
 ```
 ### 2 编码使用
